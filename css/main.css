@@ -10,8 +10,12 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
-  position: relative;
+  position: absolute;
   transition:
+    all linear,
+    transform 1s,
+    box-shadow 1s,
+    z-index 1s;
 }
 
 .polaroid > img {
@@ -50,5 +54,7 @@ html {
 }
 
 .polaroid:hover {
-
+  transform: rotate(0);
+  z-index: 1000;
+  box-shadow: 1px 8px 25px rgba(0, 0, 0, 1);
 }
