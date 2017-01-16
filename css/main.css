@@ -1,6 +1,5 @@
 html {
   background-color: #e2e2e2;
-
   font-family: sans-serif;
 }
 
@@ -8,10 +7,10 @@ html {
   margin: 0;
   padding: 10px;
   width: 250px;
-
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
+  position: relative;
 }
 
 .polaroid > img {
@@ -22,4 +21,20 @@ html {
 .polaroid > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+  position: absolute;
+  left: 5em;
+  bottom: 1.25em;
+}
+
+.polaroid:nth-child(1) {
+  position: absolute;
+  left: 20em;
+}
+
+.polaroid:nth-child(2) {
+  position: absolute;
+}
+
+.polaroid:nth-child(3) {
+  position: absolute;
 }
